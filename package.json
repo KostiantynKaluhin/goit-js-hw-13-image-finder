@@ -1,0 +1,29 @@
+{
+  "name": "goit-js-hw-13-image-finder",
+  "version": "1.0.0",
+  "description": "goit-js-hw-13-image-finder",
+  "main": "index.js",
+  "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "pnotify": "^5.2.0",
+    "posthtml-include": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KostiantynKaluhin/goit-js-hw-13-image-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KostiantynKaluhin/goit-js-hw-13-image-finder/issues"
+  },
+  "homepage": "https://github.com/KostiantynKaluhin/goit-js-hw-13-image-finder#readme"
+}
