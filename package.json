@@ -13,7 +13,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-13-image-finder"
+
   },
   "repository": {
     "type": "git",
