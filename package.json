@@ -1,7 +1,7 @@
 {
   "name": "goit-js-hw-13-image-finder",
   "version": "1.0.0",
-  "description": "goit-js-hw-13-image-finder",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "basiclightbox": "^5.0.4",
