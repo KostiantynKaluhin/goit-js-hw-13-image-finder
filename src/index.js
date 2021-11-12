@@ -41,7 +41,7 @@ async function fetchPhotos() {
   try {
     const hits = await pixabayApiService.fetchPhotos();
     if (hits.length === 0) {
-      return alert('Out of photos on request');
+      return alert('No more images');
     } else {
       appendPhotosMarkup(hits);
       removeIsHiddenBtn();
