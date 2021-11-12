@@ -25,11 +25,12 @@ function onSearch(event) {
   event.preventDefault();
 
   const searchQuery = event.currentTarget.elements.query.value;
-  if (searchQuery === '') {
+  if (searchQuery.trim() === '') {
     addIsHiddenBtn();
     tooManyMatches();
     return;
   }
+
   pixabayApiService.query = searchQuery;
   pixabayApiService.resetPage();
   clearCardContainer();
