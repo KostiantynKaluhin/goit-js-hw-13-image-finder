@@ -23,8 +23,8 @@ body {
 }
 
 .photo {
-  width: 400px;
-  height: 300px;
+  width: 335px;
+  height: 250px;
 }
 
 .photo-card {
@@ -53,4 +53,7 @@ body {
   width: 20%;
   text-align: center;
   background-color: rgb(250, 245, 245);
+}
+.is-hidden {
+  visibility: hidden;
 }
