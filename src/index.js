@@ -41,7 +41,7 @@ async function fetchPhotos() {
   try {
     const hits = await pixabayApiService.fetchPhotos();
     if (hits.length === 0) {
-      alertf();
+      notification();
       // return alert('No more images');
       return;
     } else {
@@ -79,7 +79,7 @@ function tooManyMatches() {
 //   clearCardContainer();
 // }
 
-function alertf() {
+function notification() {
   alert({
     text: 'No more images!',
     delay: 2000,
