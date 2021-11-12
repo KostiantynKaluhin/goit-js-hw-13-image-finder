@@ -3,7 +3,7 @@ import photoTemplate from './templates/photo';
 import getRefs from './js/getRefs';
 
 // ================pnotify=======================//
-import { error } from '@pnotify/core';
+import { error, alert } from '@pnotify/core';
 import '@pnotify/core/dist/BrightTheme.css';
 import '@pnotify/core/dist/PNotify.css';
 // lightbox
@@ -41,7 +41,9 @@ async function fetchPhotos() {
   try {
     const hits = await pixabayApiService.fetchPhotos();
     if (hits.length === 0) {
-      return alert('No more images');
+      alertf();
+      // return alert('No more images');
+      return;
     } else {
       appendPhotosMarkup(hits);
       removeIsHiddenBtn();
@@ -69,14 +71,20 @@ function tooManyMatches() {
   clearCardContainer();
 }
 
-function notFound() {
-  error({
-    text: 'Incorrect input!',
+// function notFound() {
+//   error({
+//     text: 'Incorrect input!',
+//     delay: 2000,
+//   });
+//   clearCardContainer();
+// }
+
+function alertf() {
+  alert({
+    text: 'No more images!',
     delay: 2000,
   });
-  clearCardContainer();
 }
-
 function removeIsHiddenBtn() {
   button.classList.remove('is-hidden');
 }
